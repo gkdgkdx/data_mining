@@ -1,0 +1,458 @@
+数据列名:
+['id', 'user_name', 'chinese_name', 'email', 'age', 'income', 'gender', 'country', 'chinese_address', 'credit_score', 'phone_number', 
+'registration_date', 'timestamp', 'is_active', 'quantity', 'purchase_data', 'category', 'avg_price', 'order_count', 'unique_categories', 
+'total_spent', 'active_days', 'reg_year', 'reg_month', 'activity_hour', 'activity_dayofweek', 'is_weekend', 'age_group', 'income_group', 'province']
+
+
+数据基本信息:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 96058 entries, 0 to 96057
+Data columns (total 30 columns):
+ #   Column              Non-Null Count  Dtype
+---  ------              --------------  -----
+ 0   id                  96058 non-null  int32
+ 1   user_name           96058 non-null  object
+ 2   chinese_name        96058 non-null  object
+ 3   email               96058 non-null  object
+ 4   age                 96058 non-null  int8
+ 5   income              96058 non-null  float32
+ 6   gender              96058 non-null  category
+ 7   country             96058 non-null  object
+ 8   chinese_address     96058 non-null  object
+ 9   credit_score        96058 non-null  int16
+ 10  phone_number        96058 non-null  object
+ 11  registration_date   96058 non-null  datetime64[ns]
+ 12  timestamp           96058 non-null  datetime64[ns]
+ 13  is_active           96058 non-null  bool
+ 14  quantity            96058 non-null  int16
+ 15  purchase_data       96058 non-null  object
+ 16  category            96058 non-null  object
+ 17  avg_price           96058 non-null  float32
+ 18  order_count         96058 non-null  int8
+ 19  unique_categories   96058 non-null  int8
+ 20  total_spent         96058 non-null  float32
+ 21  active_days         96058 non-null  int16
+ 22  reg_year            96058 non-null  int16
+ 23  reg_month           96058 non-null  int8
+ 24  activity_hour       96058 non-null  int8
+ 25  activity_dayofweek  96058 non-null  int8
+ 26  is_weekend          96058 non-null  int8
+ 27  age_group           96058 non-null  category
+ 28  income_group        96058 non-null  category
+ 29  province            90409 non-null  category
+
+
+
+第一条数据的完整信息:
+id: 1
+user_name: UZPFPZJ
+chinese_name: 彭敏
+email: xtnlkqsb@qq.com
+age: 36
+income: 73000.0
+gender: 女
+country: 俄罗斯
+chinese_address: 广西壮族自治区绍兴和谐路152号2单元1384
+credit_score: 423
+phone_number: 918-668-7857
+registration_date: 2024-10-02 00:00:00
+timestamp: 2025-01-09 01:38:20
+is_active: False
+quantity: 1250
+purchase_data: [{'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}
+ {'average_price': 15.940000000000001, 'category': '家居', 'items': array([{'id': 631}, {'id': 762}, {'id': 233}, {'id': 535}, {'id': 118},
+        {'id': 449}, {'id': 256}, {'id': 404}, {'id': 99}, {'id': 638}],
+       dtype=object)}                                                                                                                    ]
+category: ['家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居'
+ '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居' '家居']
+avg_price: 15.9399995803833
+order_count: 125
+unique_categories: 1
+total_spent: 19925.0
+active_days: 99
+reg_year: 2024
+reg_month: 10
+activity_hour: 1
+activity_dayofweek: 3
+is_weekend: 0
+age_group: 36-45
+income_group: 极低
+province: 广西壮族自治区
