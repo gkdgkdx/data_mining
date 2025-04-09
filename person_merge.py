@@ -17,6 +17,7 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.cluster import KMeans
 from datetime import datetime, timedelta
 import missingno as msno
+from tqdm import tqdm
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -48,9 +49,8 @@ def read_all_parquet_files(folder_path, columns=None, sample_size=None):
     # 记录所有成功处理的文件路径
     processed_file_paths = []
     
-    # 逐个读取并处理文件
-    for i, file_path in enumerate(parquet_files):
-        print(f"\n处理文件 {i+1}/{len(parquet_files)}: {os.path.basename(file_path)}")
+    # 使用tqdm包装文件列表以显示进度条
+    for i, file_path in enumerate(tqdm(parquet_files, desc="处理文件进度", unit="文件")):
         file_start_time = time.time()
         
         try:
@@ -142,7 +142,7 @@ def read_all_parquet_files(folder_path, columns=None, sample_size=None):
     
     end_time = time.time()
     print(f"\n所有文件处理完成，总耗时: {end_time - start_time:.2f}秒")
-    print(f"成功处理的文件数量: {len(processed_file_paths)}")
+    print(f"成功处理的文件数量: {len(processed_file_paths)}/{len(parquet_files)}")
     
     # 为了保持与原函数接口一致，返回第一个处理后的文件内容和所有处理文件的路径
     result = pd.read_parquet(processed_file_paths[0])
@@ -204,7 +204,9 @@ def preprocess_data(df):
     batch_size = 10000
     all_parsed_data = []
     
-    for i in range(0, len(df), batch_size):
+    # 添加进度条显示批处理进度
+    total_batches = (len(df) + batch_size - 1) // batch_size
+    for i in tqdm(range(0, len(df), batch_size), desc="解析购买历史", total=total_batches, unit="批次"):
         batch = df.iloc[i:i+batch_size]
         batch_parsed = batch['purchase_history'].apply(parse_purchase)
         all_parsed_data.extend(batch_parsed)
@@ -261,9 +263,11 @@ def preprocess_data(df):
     }
     
     # 执行聚合 - 只按id分组
+    print("执行数据聚合...")
     user_df = df.groupby('id').agg(agg_functions).reset_index()
     
     # 创建新的聚合指标
+    print("计算用户指标...")
     user_df['order_count'] = user_df['purchase_data'].apply(len)  # 订单数量
     user_df['unique_categories'] = user_df['category'].apply(lambda x: len(set(filter(None, x))))  # 不同类别数
     
@@ -277,7 +281,9 @@ def preprocess_data(df):
                 total += price * qty
         return total
     
-    user_df['total_spent'] = user_df.apply(calc_total_spent, axis=1)
+    # 使用tqdm显示计算进度
+    print("计算总消费金额...")
+    user_df['total_spent'] = [calc_total_spent(row) for row in tqdm(user_df.to_dict('records'), desc="计算消费金额", unit="用户")]
     
     # 计算活跃天数
     user_df['active_days'] = (user_df['timestamp'] - user_df['registration_date']).dt.days
@@ -303,6 +309,7 @@ def preprocess_data(df):
         user_df['province'] = user_df['chinese_address'].str.extract(r'^(.*?省|.*?自治区|.*?市)')
     
     # 优化内存使用
+    print("优化内存使用...")
     for col in user_df.select_dtypes(include=['int']).columns:
         user_df[col] = pd.to_numeric(user_df[col], downcast='integer')
     for col in user_df.select_dtypes(include=['float']).columns:
@@ -321,7 +328,7 @@ def preprocess_data(df):
 
 def create_processed_data_folder():
     """创建用于存放处理后数据的文件夹"""
-    folder_name = 'processed_data'
+    folder_name = 'processed_data_30G'
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
         print(f"创建文件夹: {folder_name}")
@@ -380,9 +387,10 @@ def run_analysis(df, file_paths):
     return user_df
 
 if __name__ == "__main__":
+    start_time = time.time()
     try:
         # 指定数据文件路径
-        folder_path = 'D:\\mylearn\\data_mining\\10G_data'
+        folder_path = 'D:\\mylearn\\data_mining\\30G_data'
         
         # 读取文件，加入user_name列
         needed_columns = [
@@ -412,3 +420,5 @@ if __name__ == "__main__":
         print(f"处理过程中发生错误: {str(e)}")
         import traceback
         traceback.print_exc()
+    end_time = time.time()
+    print(f"总耗时: {(end_time - start_time) / 60:.2f}分钟")
