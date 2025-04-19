@@ -1,0 +1,38 @@
+Data columns (total 15 columns):
+ #   Column             Dtype
+---  ------             -----
+ 0   id                 int64
+ 1   last_login         object
+ 2   user_name          object
+ 3   fullname           object
+ 4   email              object
+ 5   age                int64
+ 6   income             float64
+ 7   gender             object
+ 8   country            object
+ 9   address            object
+ 10  purchase_history   object
+ 11  is_active          bool
+ 12  registration_date  object
+ 13  phone_number       object
+ 14  login_history      object
+dtypes: bool(1), float64(1), int64(2), object(11)
+memory usage: 606.2+ MB
+None
+id                                                                   1
+last_login                                   2024-08-25T05:39:16+00:00
+user_name                                                       RCLELJ
+fullname                                                           李泽宸
+email                                                 wslfszer@126.com
+age                                                                 71
+income                                                        833917.3
+gender                                                               男
+country                                                             英国
+address                                                   上海市淄博山水路360号
+purchase_history     {"avg_price":3014,"categories":"手套","items":[{...
+is_active                                                         True
+registration_date                                           2023-01-13
+phone_number                                           +44 1850 116429
+login_history        {"avg_session_duration":64,"devices":["mobile"...
+Name: 1, dtype: object
+{"avg_price":3014,"categories":"手套","items":[{"id":5245}],"payment_method":"信用卡","payment_status":"已退款","purchase_date":"2024-02-27"}
